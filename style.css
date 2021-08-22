@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#chatSection {
+    height: 100vh;
+    width: 100vw;
+    background: #b9d5ec;
+    overflow: hidden;
+}
+
+#chatbot {
+    display: none;
+    position:absolute;
+    top: 200px;
+    left: 500px;
+
+    }
+
+#chatSection {
+    
+}
+
+.container {
+    min-width : 250px;
+
+}
+
+.botIcon {
+    height: 200px;
+    width: 70%;
+    position: absolute;
+    left: 60%;
+    top: -180px;
+    transform: translateX(-60%);
+    z-index: 10;
+}
+
+.botIcon img {
+    height: 100%;
+    width: 100%;
+}
+
+.bot {
+    border: 2px solid #262e5c;
+    height: 450px;
+    position: relative;
+    z-index: 999;
+    background: #070325;
+}
+.close {
+    position: absolute;
+    right: 0;
+    top:-45px;
+    padding:10px 15px;
+    background:tomato;
+    color:white;
+    font-size:1.2rem;
+    cursor:pointer;
+    z-index: 999;
+}
+.botBody {
+    height: 100%;
+    min-width: 350px;
+    color: #fff;
+}
+
+.botBody .greetings {
+    text-align: center;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    background: coral;
+}
+
+.botBody .message {
+    height: 90%;
+    width: 100%;
+    overflow-y: auto;
+}
+
+.botBody .message .messageBot {
+    padding: 1rem;
+    background: #fff;
+    width: 80%;
+    color: #070325;
+    margin: 1rem 0px;
+}
+
+.botBody .message .messageUser {
+    padding: 1rem;
+    background: #fff;
+    width: 80%;
+    color: #070325;
+    margin: 1rem 0px;
+    margin-left: auto;
+}
+
+.botBody .writeMessage {
+    height: 10%;
+    width: 100%;
+    display: flex;
+}
+
+
+.botBody .writeMessage .txtBox {
+    width: 80%;
+    font-size: 1.2rem;
+    padding: 0px 8px;
+    outline: none;
+}
+
+.botBody .writeMessage .sendBtn {
+    width: 20%;
+}
+
+#chatSection .chat {
+    height: 100%;
+    width: 500px;
+}
+
+#chatSection .chat .chatGrettings {
+    height: 5%;
+    width: 100%;
+    background: #fff;
+    text-align: center;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px .8rem;
+    display:flex;
+}
+#chatSection .chat .chatGrettings h2{
+    font-size: 2rem;
+    display: inline-block;
+}
+#chatSection .chat .chatGrettings input{
+    font-size: 1rem;
+    padding:5px 10px;
+    background:rgb(8, 173, 49);
+    color:rgb(0, 0, 0);
+    border-radius: 8px;
+    border: none;
+}
+
+#chatSection .chat .message {
+    height: 90%;
+    width: 100%;
+    background: rgb(6, 158, 163);
+    padding: 5px .8rem;
+}
+
+#chatSection .chat .message .receiver,
+#chatSection .chat .message .sender {
+    width: 80%;
+    background: rgb(6, 158, 163);
+    padding: 5px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#chatSection .chat .message .receiver img {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+}
+
+#chatSection .chat .message .receiver p,
+#chatSection .chat .message .sender p {
+    padding: 10px;
+    background: cyan;
+    margin-right: 5px;
+}
+
+#chatSection .chat .message .receiver .time {
+    align-self: flex-end;
+    padding-bottom: 10px;
+}
+
+#chatSection .chat .message .sender {
+    margin-left: auto;
+}
+
+#chatSection .chat .message .sender .time {
+    margin-right: 10px;
+}
+
+#chatSection .chat .message .sender p {
+    margin-right: -25px;
+}
+
+
+#chatSection .chat .writeMsg {
+    height: 5%;
+    background: cyan;
+    display: flex;
+}
+
+#chatSection .chat .writeMsg .txtFeild {
+    width: 85%;
+    height: 100%;
+    padding-left: 10px;
+    font-size: 1.3rem;
+}
+
+#chatSection .chat .writeMsg .sendBtn {
+    width: 15%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+}
