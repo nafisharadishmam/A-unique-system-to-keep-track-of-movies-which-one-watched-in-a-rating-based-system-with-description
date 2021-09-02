@@ -1,0 +1,36 @@
+}
+
+.movie-logo {
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    width: 200px;
+    color: var(--red);
+}
+
+.movie-description {
+    width: 100%;
+}
+
+.movie-genre {
+    padding: 5px 0;
+}
+
+.movie-rating {
+    padding: 5px 0;
+    color: var(--red);
+}
+
+/*Add movie modal box*/
+.movie__modal-box {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255, 0.5);
+    animation-name: open-modal;
+    animation-duration: 1s;
+}
