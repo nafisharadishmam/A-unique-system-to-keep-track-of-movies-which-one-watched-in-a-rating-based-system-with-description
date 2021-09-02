@@ -1,0 +1,17 @@
+<label for="movie-rating">Enter rating</label><br>
+                                <select name="rating" id="movie-rating">
+                                    <option value="None">--Choose rating--</option>
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select><br>
+
+</button>
+                    <div class="movie-list__empty-item">
+                        <i class="fas fa-plus fa-7x"></i><br><br>
+                        Click the 'Add Movie' button to enter an entry
+                    </div>
+
