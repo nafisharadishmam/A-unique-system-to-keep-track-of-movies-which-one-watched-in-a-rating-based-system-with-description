@@ -26,7 +26,7 @@ io.on('connection', socket => {
         socket.join(room);
 
         //Welcome only user
-        socket.emit('message', formatMessage(roomName, 'Welcome to gossip galaxy',user.email));
+        socket.emit('message', formatMessage(roomName, 'Welcome to discussion',user.email));
 
         // Welcome message connect
         socket.broadcast.to(user.room).emit("message", formatMessage(roomName, `${user.username} user join the room `,user.email));
