@@ -1,0 +1,14 @@
+{
+  "name": "movietrack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Wishlist.js",
+  "scripts": {
+    "jsdoc": "jsdoc -c jsdoc.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jsdoc": "^3.6.7"
+  }
+}
