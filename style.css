@@ -1,0 +1,140 @@
+#messenger-section{
+    height: 600px;
+    width: 400px;
+    position: absolute;
+    bottom: 100px;
+    right: 20px;
+}
+
+.group-messenger-icon{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+.group-messenger-icon button:focus{
+    outline: none;
+    border: none;
+    box-shadow: 0 0 0 #000;
+}
+.group-messenger-icon button img{
+   height: 80px;
+   width: 80px;
+}
+.container-mesngr{
+    background: rgb(255, 255, 255);
+    border-radius: 8px;
+    height: 100%;
+    width: 100%;
+}
+
+.container-mesngr .title{
+    background: rgb(160, 11, 219);
+    border-radius: 8px 8px 0 0;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    height: 80px;
+}
+.container-mesngr .title button{
+    height: 40px;
+    width: 40px;
+    padding: 0 !important;
+    border: none;
+    position: relative;
+}
+.container-mesngr .title button::before{
+    content: "Chatbot";
+    position: absolute;
+    left: -70px;
+    top: 5px;
+    color: rgb(141, 231, 212);
+    font-size: 1rem;
+    font-weight: bold;
+}
+.container-mesngr .title button img{
+    height: 100%;
+    width: 100%;
+}
+
+.container-mesngr .body{
+    height: 460px;
+    border: 2px solid rgb(160, 11, 219);
+    overflow-y: auto;
+}
+.container-mesngr .body .receive-message{
+    padding: 5px 10px;
+}
+.container-mesngr .body .receive-message .intro{
+    gap: 2rem;
+    font-size: .8rem;
+     width: 80%;
+     padding-left: 8px;
+}
+.container-mesngr .body .receive-message .message-text{
+    padding: 4px 0;
+    font-size: 1rem;
+    gap: 1rem;
+}
+.container-mesngr .body .receive-message .message-text .message{
+    background: rgb(238, 48, 197);
+    padding: 4px 12px;
+    border-radius: 10px;
+    color: mintcream;
+}
+.container-mesngr .body .receive-message .message-text .time{
+    align-self: flex-end;
+    font-size: 0.8rem;
+}
+
+.container-mesngr .body .send-message{
+    padding: 5px 10px;
+}
+
+.container-mesngr .body .send-message .message-text{
+    padding: 4px 0;
+    font-size: 1rem;
+    gap: 1rem;
+    justify-content: space-around;
+}
+.container-mesngr .body .send-message .message-text .message{
+    width: 70%;
+    text-align: justify;
+    background: rgb(79, 133, 233);
+    padding: 4px 12px;
+    border-radius: 10px;
+    color: mintcream;
+    order: 2;
+}
+.container-mesngr .body .send-message .message-text .time{
+    align-self: flex-end;
+    font-size: 0.8rem;
+    order: 1;
+}
+
+
+
+.container-mesngr .button{
+    background: rgb(160, 11, 219);
+    border-radius: 0 0 8px 8px;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    height: 60px;
+    padding: 2px;
+}
+
+.container-mesngr .button .input-group{
+   height: 100%;
+}
+.container-mesngr .button .input-group button img{
+   height: 15px;
+   width: 15px;
+   margin-right: 10px;
+}
+.container-mesngr .button .input-group input:focus{
+   outline: none;
+   border: none;
+   box-shadow: 0 0 0 #000;
+}
