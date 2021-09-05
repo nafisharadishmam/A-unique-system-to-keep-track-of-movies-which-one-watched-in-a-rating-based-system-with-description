@@ -1,86 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>JS Filtering System</title>
-        <link rel="stylesheet" href="style.css">
-        <script defer src="https://kit.fontawesome.com/9f767eca8f.js" crossorigin="anonymous"></script>
-        <script defer src="main.js"></script>
-    </head>
-    <body>
-        <header>
-          
-        </header>
-        <div class="container">
-            <div class="container__header">
-                <img src="images/js-logo.png" id="logo" alt="JS logo">
-                <div class="container__title">
-                    <h1>JS Filtering System</name></h1>
-                    <h3>Date started: <date>April 10, 2020</date></h3>
-                    <h3>Date ended: <date>April 15, 2020</date></h3>
-                </div>
-            </div>
-            <div class="container__movie-system">
-                <nav>
-                    <li data-nav-list class="active">All movies</li>
-                    <li data-nav-list>Action</li>
-                    <li data-nav-list>Comedy</li>
-                    <li data-nav-list>Drama</li>
-                    <li data-nav-list>Horror</li>
-                    <li data-nav-list>Romance</li>
-                </nav>
-                <div class="movie-system__movie-list">
-                    <button class="movie-list__add-movie">
-                        <i class="fas fa-video"></i> Add movie
-                    </button>
-                    <div class="movie-list__empty-item">
-                        <i class="fas fa-plus fa-7x"></i><br><br>
-                        Click the 'Add Movie' button to enter an entry
-                    </div>
-                </div>
-                <div class="movie__modal-box">
-                    <div class="movie__modal-content">
-                        <div class="movie__modal-header">
-                            Enter movie credentials
-                            <div class="close">&times</div>
-                        </div>
-                        <div class="movie__add-movie">
-                            <div class="add-movie__genre-image"></div>  
-                            <div class="add-movie__input-form">
-                                <label for="movie-name">Enter name</label><br>
-                                <input name="name" type="text" id="movie-name" placeholder="Name of movie" required><br>
 
-                                <label for="movie-genre">Choose genre</label><br>
-                                <select name="genre" id="movie-genre">
-                                    <option value="None">--Select a genre--</option>
-                                    <option value="Action">Action</option>
-                                    <option value="Comedy">Comedy</option>
-                                    <option value="Drama">Drama</option>
-                                    <option value="Horror">Horror</option>
-                                    <option value="Romance">Romance</option>
-                                </select><br>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-                                <label for="movie-rating">Enter rating</label><br>
-                                <select name="rating" id="movie-rating">
-                                    <option value="None">--Choose rating--</option>
-                                    <option value="0">0</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                </select><br>
+  <title>ML chatbot</title>
 
-                                <label for="movie-description">Enter description</label><br>
-                                <textarea name="description" id="movie-description" placeholder="Description or summary of the movie"></textarea><br>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
-                                <input type="submit" id="add-movie" value="Add movie">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </body>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+  <link rel='stylesheet'
+    href='https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.3/jquery.mCustomScrollbar.min.css'>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="overly"></div>
+  <div class="bot-messenger-icon">
+      <button type="button" class="btn" data-bs-toggle="modal" id="messenger-icon" data-bs-target="#exampleModal">
+          <img src="bot.png" alt="group-messenger-icon" srcset="">
+      </button>
+  </div>
+
+  <div class="chat">
+    <div class="chat-title">
+      <figure class="avatar">
+        <img src="css/bot.png" /></figure>
+      <div class="chat-group">
+        <h1>Movie bot</h1>
+        <h2>I am the movie suggestion bot </h2>
+      </div>
+      <div class="close">
+        <i class="fa fa-times"></i>
+      </div>
+    </div>
+    <div class="messages">
+      <div class="messages-content">
+      </div>
+    </div>
+    <form class="message-box" id="mymsg" method="POST" autocomplete="off">
+      <input type="text" id="MSG" autocomplete="false" name="MSG" class="message-input" placeholder="Type message...">
+
+      <button type="submit" class="message-submit">Send</button>
+    </form>
+    <h3 class="no-browser-support" hidden>Sorry, Your Browser Doesn't Support the Web Speech API. Try Opening This Demo
+      In Google Chrome.</h3>
+  </div>
+  <div class="bg"></div>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script
+    src='https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.3/jquery.mCustomScrollbar.concat.min.js'>
+  </script>
+  <script src="js/index.js"></script>
+
+
+</body>
+
 </html>
