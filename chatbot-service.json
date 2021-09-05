@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "newagent-pgap",
+  "private_key_id": "ae2ad2bab32ec61ede74a2d5ba4fce4a29f474d3",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDMGQvv4i3vPKAR\n8CHI78KHVTsfmIXzIhX+r21XCE6N99hT/EPye+F42Y9xJ4sg+Dc2vE9H8riTroFN\n/K5/4RWQPMEXteonZ5Ekb1EXUaan4emGVDpGoH5gkRmmHL2LDlLwTNnd1UhChlbL\nv6IJh9kEAK22BczO94HuscKnqZ/SwWrfpSPOH+7ydPxIG4tNvKgJM/pUijGyIObS\nlv/LQqmTXZTcycEGvuT28GeG8BxYj1/KyErl9IHmKD75w9R8zk2AFsq8UNwnMMAf\nK17ZS2/O3lIa6J5xQ2t9LFqjjaF9bJcI/RXxXdXPYd4wtJjEmhWEz6No7yEe8Q6b\nFXWZeqv1AgMBAAECggEAAQhbxQNlKTPdu9QPmSPHkyh/kbZyLTctYpJztsh8oGIA\nRjaCgoAaa0ZYNI/kAe3d+l6whc0UcGCwbJNhYtgcypuqU0hL4HeK+HdVHpe3BIo3\nScW8EL+iwS1ixGLxlIbOKCm3sz05cx8ytDTTgC+0PlxKenjrs0WyxxbyYO9AELbr\n8zZE5OWssZpZdJGzYJ1c86Ig981KX4+fWrcMQn2fV0ZL82J3T97ovchUnLcT3ltW\nOq/eL1rNhk6bFmFY9RKSyl3akJU/a+e3RnD4XQVKyDw3RQ44lX/PU5CJ0AcBRvCP\n0C0y2NNLlis42OuYv4v/mZ4dNoFx81yYOVmHdgRHKQKBgQD70mUxpaEx1ZQdvIDQ\nd9bsBSthOx1sy9CyPHL06izvpTAAAAa8Y0PmxcvaYm0L9i0WJEq1N75jHmXt55tY\nLQABiv8Cqz6OLvPDnyoJVMxCjQ6zQwkBIYUNOlyZSdy/bINLaqAjlS0hmJn2tV9S\n9TiCaMBn6eRFZhOfCIiY1HKpzQKBgQDPe/H5HfsdAHcGNrbVrNUTnySxBjPJ6q23\n26VHJz75mkZcG9zoOuY6NXj0YAlHpq6TaGvBvxUGA2/t2A0Avz+62FyxSU4Go44u\nahc1w1QmICDlk4REcSeJ3LqibQRURR4L51Oz5Da/W+q72iLgDYJ1RfxTJNq/be1L\n+mj4Q97CyQKBgQCS8Uh/WejfzYMqfu6jtupAuxt/FyGqdJwJBWEHLQafqEKEHX/Q\nuhPLO6wieMCs9C+G9hJqAGcmK3zLABUTtN6GB/eaNRbBnQA9LEk5PLQcOXdUf09n\ny4l6GI4kHIelY8qRXVyopsm5CvT8kwVWwSUCY+GyQTckj9XvPOmIVJ+8GQKBgFWK\nKQFmjd+wEGIcbpZ7UcFsLAlboEBPo10YjfRexsTLCNTym8mWdtJqtzow2cKTgoe9\nViejarx28E9jckDrmA+lIdnpeeScy4JxNK5yoB+zwTxE7BP3frCEsuFCBrXjZPbN\nYSHaJYQRFh5qWVR73VwSBWwV1qVzYZCgZWRtPsqZAoGADQf9lhrzLqJSXNnelbyl\ngzK/KsKra+t7gjFokgFo3J9IJsJfRrmrSvoSjEl96CiNVIswgHhsD2DUPMctwhcA\nTyOMQ0eiqSXTLyLcgZ6a9vJWSsSs4Vr0/DhkD1uryIvZE9m16sh0pbib8yGWjfXr\nmym9GQVFovCmxEPvYWNwXjk=\n-----END PRIVATE KEY-----\n",
+  "client_email": "moviebot@newagent-pgap.iam.gserviceaccount.com",
+  "client_id": "112694137902712245787",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/moviebot%40newagent-pgap.iam.gserviceaccount.com"
+}
