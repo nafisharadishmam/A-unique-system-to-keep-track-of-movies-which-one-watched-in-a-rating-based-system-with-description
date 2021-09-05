@@ -5,16 +5,27 @@
   "main": "server.js",
   "scripts": {
     "start": "node server",
-    "dev": "nodemon server"
+    "chat": "nodemon server",
+    "main": "nodemon main-server",
+    "bot": "nodemon chatbot-server",
+    "test": "jest",
+    "dev-bot": "nodeman chatbot-server"
   },
   "author": "Nahid",
   "license": "ISC",
   "devDependencies": {
+    "jest": "^27.1.0",
     "nodemon": "^2.0.12"
   },
   "dependencies": {
+    "@google-cloud/dialogflow": "^4.3.1",
+    "@types/socket.io-client": "^3.0.0",
+    "body-parser": "^1.19.0",
+    "dialogflow": "^4.0.3",
     "express": "^4.17.1",
     "moment": "^2.29.1",
-    "socket.io": "^4.2.0"
+    "socket.io": "^4.2.0",
+    "socket.io-client": "^4.2.0",
+    "uuid": "^8.3.2"
   }
 }
