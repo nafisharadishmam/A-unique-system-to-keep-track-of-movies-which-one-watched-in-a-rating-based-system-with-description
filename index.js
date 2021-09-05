@@ -3,262 +3,72 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.Plugin = Plugin;
-Object.defineProperty(exports, "File", {
+exports.createConfigItem = createConfigItem;
+Object.defineProperty(exports, "default", {
   enumerable: true,
   get: function () {
-    return _file.default;
+    return _full.default;
   }
 });
-Object.defineProperty(exports, "buildExternalHelpers", {
-  enumerable: true,
-  get: function () {
-    return _buildExternalHelpers.default;
-  }
-});
-Object.defineProperty(exports, "resolvePlugin", {
-  enumerable: true,
-  get: function () {
-    return _files.resolvePlugin;
-  }
-});
-Object.defineProperty(exports, "resolvePreset", {
-  enumerable: true,
-  get: function () {
-    return _files.resolvePreset;
-  }
-});
-Object.defineProperty(exports, "getEnv", {
-  enumerable: true,
-  get: function () {
-    return _environment.getEnv;
-  }
-});
-Object.defineProperty(exports, "tokTypes", {
-  enumerable: true,
-  get: function () {
-    return _parser().tokTypes;
-  }
-});
-Object.defineProperty(exports, "traverse", {
-  enumerable: true,
-  get: function () {
-    return _traverse().default;
-  }
-});
-Object.defineProperty(exports, "template", {
-  enumerable: true,
-  get: function () {
-    return _template().default;
-  }
-});
-Object.defineProperty(exports, "createConfigItem", {
-  enumerable: true,
-  get: function () {
-    return _config.createConfigItem;
-  }
-});
-Object.defineProperty(exports, "createConfigItemSync", {
-  enumerable: true,
-  get: function () {
-    return _config.createConfigItemSync;
-  }
-});
-Object.defineProperty(exports, "createConfigItemAsync", {
-  enumerable: true,
-  get: function () {
-    return _config.createConfigItemAsync;
-  }
-});
-Object.defineProperty(exports, "loadPartialConfig", {
-  enumerable: true,
-  get: function () {
-    return _config.loadPartialConfig;
-  }
-});
-Object.defineProperty(exports, "loadPartialConfigSync", {
-  enumerable: true,
-  get: function () {
-    return _config.loadPartialConfigSync;
-  }
-});
-Object.defineProperty(exports, "loadPartialConfigAsync", {
-  enumerable: true,
-  get: function () {
-    return _config.loadPartialConfigAsync;
-  }
-});
-Object.defineProperty(exports, "loadOptions", {
-  enumerable: true,
-  get: function () {
-    return _config.loadOptions;
-  }
-});
-Object.defineProperty(exports, "loadOptionsSync", {
-  enumerable: true,
-  get: function () {
-    return _config.loadOptionsSync;
-  }
-});
-Object.defineProperty(exports, "loadOptionsAsync", {
-  enumerable: true,
-  get: function () {
-    return _config.loadOptionsAsync;
-  }
-});
-Object.defineProperty(exports, "transform", {
-  enumerable: true,
-  get: function () {
-    return _transform.transform;
-  }
-});
-Object.defineProperty(exports, "transformSync", {
-  enumerable: true,
-  get: function () {
-    return _transform.transformSync;
-  }
-});
-Object.defineProperty(exports, "transformAsync", {
-  enumerable: true,
-  get: function () {
-    return _transform.transformAsync;
-  }
-});
-Object.defineProperty(exports, "transformFile", {
-  enumerable: true,
-  get: function () {
-    return _transformFile.transformFile;
-  }
-});
-Object.defineProperty(exports, "transformFileSync", {
-  enumerable: true,
-  get: function () {
-    return _transformFile.transformFileSync;
-  }
-});
-Object.defineProperty(exports, "transformFileAsync", {
-  enumerable: true,
-  get: function () {
-    return _transformFile.transformFileAsync;
-  }
-});
-Object.defineProperty(exports, "transformFromAst", {
-  enumerable: true,
-  get: function () {
-    return _transformAst.transformFromAst;
-  }
-});
-Object.defineProperty(exports, "transformFromAstSync", {
-  enumerable: true,
-  get: function () {
-    return _transformAst.transformFromAstSync;
-  }
-});
-Object.defineProperty(exports, "transformFromAstAsync", {
-  enumerable: true,
-  get: function () {
-    return _transformAst.transformFromAstAsync;
-  }
-});
-Object.defineProperty(exports, "parse", {
-  enumerable: true,
-  get: function () {
-    return _parse.parse;
-  }
-});
-Object.defineProperty(exports, "parseSync", {
-  enumerable: true,
-  get: function () {
-    return _parse.parseSync;
-  }
-});
-Object.defineProperty(exports, "parseAsync", {
-  enumerable: true,
-  get: function () {
-    return _parse.parseAsync;
-  }
-});
-exports.types = exports.OptionManager = exports.DEFAULT_EXTENSIONS = exports.version = void 0;
+exports.createConfigItemAsync = exports.createConfigItemSync = exports.loadOptionsAsync = exports.loadOptionsSync = exports.loadOptions = exports.loadPartialConfigAsync = exports.loadPartialConfigSync = exports.loadPartialConfig = void 0;
 
-var _file = require("./transformation/file/file");
+function _gensync() {
+  const data = require("gensync");
 
-var _buildExternalHelpers = require("./tools/build-external-helpers");
-
-var _files = require("./config/files");
-
-var _environment = require("./config/helpers/environment");
-
-function _types() {
-  const data = require("@babel/types");
-
-  _types = function () {
+  _gensync = function () {
     return data;
   };
 
   return data;
 }
 
-Object.defineProperty(exports, "types", {
-  enumerable: true,
-  get: function () {
-    return _types();
-  }
+var _full = require("./full");
+
+var _partial = require("./partial");
+
+var _item = require("./item");
+
+const loadOptionsRunner = _gensync()(function* (opts) {
+  var _config$options;
+
+  const config = yield* (0, _full.default)(opts);
+  return (_config$options = config == null ? void 0 : config.options) != null ? _config$options : null;
 });
 
-function _parser() {
-  const data = require("@babel/parser");
+const createConfigItemRunner = _gensync()(_item.createConfigItem);
 
-  _parser = function () {
-    return data;
-  };
-
-  return data;
-}
-
-function _traverse() {
-  const data = require("@babel/traverse");
-
-  _traverse = function () {
-    return data;
-  };
-
-  return data;
-}
-
-function _template() {
-  const data = require("@babel/template");
-
-  _template = function () {
-    return data;
-  };
-
-  return data;
-}
-
-var _config = require("./config");
-
-var _transform = require("./transform");
-
-var _transformFile = require("./transform-file");
-
-var _transformAst = require("./transform-ast");
-
-var _parse = require("./parse");
-
-const version = "7.15.4";
-exports.version = version;
-const DEFAULT_EXTENSIONS = Object.freeze([".js", ".jsx", ".es6", ".es", ".mjs", ".cjs"]);
-exports.DEFAULT_EXTENSIONS = DEFAULT_EXTENSIONS;
-
-class OptionManager {
-  init(opts) {
-    return (0, _config.loadOptions)(opts);
+const maybeErrback = runner => (opts, callback) => {
+  if (callback === undefined && typeof opts === "function") {
+    callback = opts;
+    opts = undefined;
   }
 
-}
+  return callback ? runner.errback(opts, callback) : runner.sync(opts);
+};
 
-exports.OptionManager = OptionManager;
+const loadPartialConfig = maybeErrback(_partial.loadPartialConfig);
+exports.loadPartialConfig = loadPartialConfig;
+const loadPartialConfigSync = _partial.loadPartialConfig.sync;
+exports.loadPartialConfigSync = loadPartialConfigSync;
+const loadPartialConfigAsync = _partial.loadPartialConfig.async;
+exports.loadPartialConfigAsync = loadPartialConfigAsync;
+const loadOptions = maybeErrback(loadOptionsRunner);
+exports.loadOptions = loadOptions;
+const loadOptionsSync = loadOptionsRunner.sync;
+exports.loadOptionsSync = loadOptionsSync;
+const loadOptionsAsync = loadOptionsRunner.async;
+exports.loadOptionsAsync = loadOptionsAsync;
+const createConfigItemSync = createConfigItemRunner.sync;
+exports.createConfigItemSync = createConfigItemSync;
+const createConfigItemAsync = createConfigItemRunner.async;
+exports.createConfigItemAsync = createConfigItemAsync;
 
-function Plugin(alias) {
-  throw new Error(`The (${alias}) Babel 5 plugin is being run with an unsupported Babel version.`);
+function createConfigItem(target, options, callback) {
+  if (callback !== undefined) {
+    return createConfigItemRunner.errback(target, options, callback);
+  } else if (typeof options === "function") {
+    return createConfigItemRunner.errback(target, undefined, callback);
+  } else {
+    return createConfigItemRunner.sync(target, options);
+  }
 }
